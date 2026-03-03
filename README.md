@@ -1,25 +1,96 @@
-# Personal Trainer 
+# 🏋️ Personal Trainer IA 
 
-Aplicação desenvolvida em Python com foco em modelagem de regras de negócio para planejamento nutricional e sugestão de treino.
+Agente híbrido de Personal Trainer desenvolvido em **Python**, combinando:
 
-O sistema simula um motor de prescrição fitness baseado em cálculo metabólico, ajuste calórico inteligente e distribuição de macronutrientes.
+* 📊 Cálculos determinísticos (TMB, IMC, gasto calórico)
+* 🥗 Geração de plano nutricional automatizado
+* 🏋️ Sugestão de treino baseada em objetivo
+* 🤖 LLM local com Ollama (100% offline)
 
-- Cálculo de Taxa Metabólica Basal (TMB)
+---
 
-- Cálculo de Gasto Energético Total (GET)
+## 🚀 Objetivo do Projeto
 
-- Ajuste calórico 
+Criar um agente inteligente capaz de:
 
-- Distribuição automática de macronutrientes
+1. Coletar dados físicos do usuário
+2. Calcular métricas metabólicas
+3. Gerar plano alimentar estruturado
+4. Produzir análise personalizada com IA
+5. Rodar totalmente offline
 
-- Cálculo de IMC
+Arquitetura híbrida:
 
-- Sugestão de treino baseada no objetivo
+```
+Regras matemáticas + LLM interpretativa = Agente inteligente
+```
 
-# 🚀 Tecnologias utilizadas
+---
 
-- Python
-- Lógica de decisão
-- Estrutura modular
-- Armazenamento em JSON
+## 🧠 Arquitetura do Projeto
 
+```
+personal-trainer-ia/
+│
+├── app.py          # Orquestração principal
+├── calculos.py     # TMB, IMC e gasto calórico
+├── dieta.py        # Regras nutricionais
+├── treino.py       # Sugestão de treino
+├── memoria.py      # Persistência de dados
+└── ia.py           # Integração com LLM (Ollama)
+```
+
+Separação clara de responsabilidades:
+
+* `app.py` → fluxo do programa
+* `ia.py` → inteligência artificial
+* Módulos auxiliares → lógica determinística
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+* Python 
+* Ollama
+* JSON
+
+---
+
+## 💻 Como Rodar o Projeto
+
+### 1️⃣ Instalar dependências
+
+```bash
+pip install ollama
+```
+
+### 2️⃣ Instalar Ollama
+
+Baixe em:
+[https://ollama.com](https://ollama.com)
+
+### 3️⃣ Baixar modelo
+
+```bash
+ollama pull llama3
+```
+
+Ou modelo mais leve:
+
+```bash
+ollama pull mistral
+```
+
+### 4️⃣ Executar
+
+```bash
+python app.py
+```
+
+---
+
+## 📌 Status
+
+✔ Arquitetura modular
+✔ LLM offline funcional
+✔ Sistema pronto para expansão
