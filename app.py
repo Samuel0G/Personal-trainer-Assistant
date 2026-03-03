@@ -2,7 +2,7 @@ from calculos import tmb_calculos, tmb_total, calcular_imc
 from treino import Treino
 from dieta import plano_nutricional
 from memoria import salvar
-
+from ia import gerar_relatorio_ia
 
 print("--- AGENTE IA PERSONAL TRAINER ---")
 
@@ -61,7 +61,25 @@ plano = plano_nutricional(objetivo, gasto_total, peso)
 treino = Treino(objetivo)
 imc = calcular_imc(peso, altura)
 
+dados_usuario = {
+    "idade": idade,
+    "peso": peso,
+    "altura": altura,
+    "objetivo": objetivo
+}
 
+resultados = {
+    "imc": imc,
+    "calorias": plano['calorias'],
+    "proteina": plano['proteina'],
+    "gordura": plano['gordura'],
+    "carboidrato": plano['carboidrato']
+}
+
+relatorio = gerar_relatorio_ia(dados_usuario, resultados)
+
+print("\n--- ANÁLISE PERSONALIZADA ---\n")
+print(relatorio)
 
 # --- RESULTADOS ---
 
