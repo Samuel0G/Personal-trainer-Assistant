@@ -1,130 +1,83 @@
-<<<<<<< HEAD
-# 🏋️ Personal Trainer 
-=======
-# 🏋️ Personal Trainer IA 
->>>>>>> 3b7db9d901ae4bad8011eb5812045fec0e8db8e3
+Personal Trainer 💪
 
-Agente híbrido de Personal Trainer desenvolvido em **Python**, combinando:
+Sistema desenvolvido em Python para gerar treinos e recomendações de dieta personalizadas com base em dados informados pelo usuário, como idade, peso, altura e objetivo físico.
 
-* 📊 Cálculos determinísticos (TMB, IMC, gasto calórico)
-* 🥗 Geração de plano nutricional automatizado
-* 🏋️ Sugestão de treino baseada em objetivo
-<<<<<<< HEAD
-=======
-* 🤖 LLM local com Ollama (100% offline)
+O projeto foi criado para simular o funcionamento de um assistente de planejamento de treino e alimentação, auxiliando no cálculo de necessidades calóricas e organização de rotinas de treino.
 
->>>>>>> 3b7db9d901ae4bad8011eb5812045fec0e8db8e3
----
+📌 Funcionalidades
 
-## 🚀 Objetivo do Projeto
+Cálculo de taxa metabólica basal (TMB)
 
-<<<<<<< HEAD
-Criar um programa inteligente capaz de:
-=======
-Criar um agente inteligente capaz de:
->>>>>>> 3b7db9d901ae4bad8011eb5812045fec0e8db8e3
+Estimativa de necessidade calórica diária
 
-1. Coletar dados físicos do usuário
-2. Calcular métricas metabólicas
-3. Gerar plano alimentar estruturado
-<<<<<<< HEAD
-=======
-4. Produzir análise personalizada com IA
-5. Rodar totalmente offline
+Geração de planos de treino
 
-Arquitetura híbrida:
+Sugestão de estrutura de dieta
 
-```
-Regras matemáticas + LLM interpretativa = Agente inteligente
-```
+Interface simples via terminal ou web
 
----
->>>>>>> 3b7db9d901ae4bad8011eb5812045fec0e8db8e3
+Organização modular do código
 
-## 🧠 Arquitetura do Projeto
-
-```
-<<<<<<< HEAD
-personal-trainer
-=======
-personal-trainer-ia/
->>>>>>> 3b7db9d901ae4bad8011eb5812045fec0e8db8e3
+🧱 Estrutura do Projeto
+personal-trainer-ia
 │
-├── app.py          # Orquestração principal
-├── calculos.py     # TMB, IMC e gasto calórico
-├── dieta.py        # Regras nutricionais
-├── treino.py       # Sugestão de treino
-├── memoria.py      # Persistência de dados
-<<<<<<< HEAD
-=======
-└── ia.py           # Integração com LLM (Ollama)
->>>>>>> 3b7db9d901ae4bad8011eb5812045fec0e8db8e3
-```
+├── app.py              # Arquivo principal do sistema
+├── web_app.py          # Interface web do sistema
+├── treino.py           # Lógica de geração de treinos
+├── dieta.py            # Lógica de recomendações de dieta
+├── calculos.py         # Cálculos metabólicos e calóricos
+├── memoria.py          # Estrutura para armazenamento de dados
+│
+├── templates/
+│   └── index.html      # Interface HTML
+│
+├── static/
+│   └── style.css       # Estilo da interface
+│
+├── requirements.txt    # Dependências do projeto
+└── README.md
+⚙️ Requisitos
 
-Separação clara de responsabilidades:
+Python 3.8 ou superior
 
-* `app.py` → fluxo do programa
-<<<<<<< HEAD
-=======
-* `ia.py` → inteligência artificial
->>>>>>> 3b7db9d901ae4bad8011eb5812045fec0e8db8e3
-* Módulos auxiliares → lógica determinística
+Instale as dependências:
 
----
-
-## ⚙️ Tecnologias Utilizadas
-
-<<<<<<< HEAD
-* Python
-=======
-* Python 
-* Ollama
->>>>>>> 3b7db9d901ae4bad8011eb5812045fec0e8db8e3
-* JSON
-
----
-
-## 💻 Como Rodar o Projeto
-
-<<<<<<< HEAD
-=======
-### 1️⃣ Instalar dependências
-
-```bash
-pip install ollama
-```
-
-### 2️⃣ Instalar Ollama
-
-Baixe em:
-[https://ollama.com](https://ollama.com)
-
-### 3️⃣ Baixar modelo
-
-```bash
-ollama pull llama3
-```
-
-Ou modelo mais leve:
-
-```bash
-ollama pull mistral
-```
-
->>>>>>> 3b7db9d901ae4bad8011eb5812045fec0e8db8e3
-### 4️⃣ Executar
-
-```bash
+pip install -r requirements.txt
+🚀 Como executar
+Executar versão principal
 python app.py
-```
+Executar interface web
+python web_app.py
 
----
+Depois abra no navegador:
 
-## 📌 Status
+http://localhost:5000
+🧮 O que o sistema calcula
 
-✔ Arquitetura modular
-<<<<<<< HEAD
-=======
-✔ LLM offline funcional
->>>>>>> 3b7db9d901ae4bad8011eb5812045fec0e8db8e3
-✔ Sistema pronto para expansão
+O programa utiliza fórmulas tradicionais de nutrição para:
+
+calcular metabolismo basal
+
+estimar gasto energético
+
+ajustar calorias conforme objetivo
+
+Objetivos suportados:
+
+perda de peso
+
+manutenção
+
+ganho de massa
+
+🎯 Objetivo do projeto
+
+Este projeto foi desenvolvido para praticar:
+
+programação em Python
+
+organização de projetos modulares
+
+lógica aplicada a saúde e fitness
+
+criação de interfaces simples para sistemas
