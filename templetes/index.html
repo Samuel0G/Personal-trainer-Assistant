@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>IA Personal Trainer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏋️ IA Personal Trainer</h1>
+<p>Descubra seu gasto calórico, IMC e recomendação básica de treino.</p>
+
+<form method="POST">
+
+<label>Idade</label>
+<input type="number" name="idade" required>
+
+<label>Peso (kg)</label>
+<input type="number" step="0.1" name="peso" required>
+
+<label>Altura (cm)</label>
+<input type="number" name="altura" required>
+
+<label>Sexo</label>
+<select name="sexo">
+<option value="M">Masculino</option>
+<option value="F">Feminino</option>
+</select>
+
+<label>Nível de atividade</label>
+<select name="nivel">
+<option value="sedentario">Sedentário</option>
+<option value="leve">Leve</option>
+<option value="moderado">Moderado</option>
+<option value="intenso">Intenso</option>
+</select>
+
+<button type="submit">Calcular</button>
+
+</form>
+
+{% if resultado %}
+
+<div class="resultado">
+
+<h2>Resultado</h2>
+
+<p><b>TMB:</b> {{resultado.tmb}}</p>
+<p><b>Gasto diário:</b> {{resultado.total}}</p>
+<p><b>IMC:</b> {{resultado.imc}}</p>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>
