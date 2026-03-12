@@ -18,8 +18,7 @@ Interface simples via terminal ou web
 
 Organização modular do código
 
-<<<<<<< HEAD
-=======
+
 ⚙️ Requisitos
 
 Python 3.8 ou superior
@@ -33,7 +32,7 @@ python app.py
 Executar interface web
 python web_app.py
 
->>>>>>> 4aa746a6e909b19b2dcfd3491600c137b8753bc3
+
 🧮 O que o sistema calcula
 
 O programa utiliza fórmulas tradicionais de nutrição para:
