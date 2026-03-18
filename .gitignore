@@ -1,5 +1,5 @@
-dist/
-build/
 __pycache__/
-*.exe
-memoria.json
+*.pyc
+*.spec
+.env
+venv/
