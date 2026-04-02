@@ -1,6 +1,8 @@
+print("RODANDO...")
 from calculos import tmb_calculos, tmb_total, calcular_imc
 from treino import Treino
 from dieta import plano_nutricional
+from memoria import salvar_usuario
 
 
 # FUNÇÕES DE VALIDAÇÃO
@@ -108,6 +110,34 @@ def main():
 
  
     mostrar_resultados(imc, tmb, gasto_total, plano, treino)
+
+    
+    dados_usuario = {
+        "idade": idade,
+        def main():
+
+    idade, peso, altura, sexo, nivel, objetivo = coletar_dados_usuario()
+
+    tmb, gasto_total, imc, plano, treino = processar_dados(
+        idade, peso, altura, sexo, nivel, objetivo
+    )
+
+    mostrar_resultados(imc, tmb, gasto_total, plano, treino)
+
+    dados_usuario = {
+        "idade": idade,
+        "peso": peso,
+        "altura": altura,
+        "sexo": sexo,
+        "nivel": nivel,
+        "objetivo": objetivo,
+        "imc": imc,
+        "tmb": tmb,
+        "gasto_total": gasto_total,
+        "plano": plano,
+        "treino": treino}
+
+    salvar_usuario(dados_usuario)
 
     input("\nPressione Enter para sair...")
 
