@@ -1,0 +1,21 @@
+[
+  {
+    "idade": 22,
+    "peso": 60.0,
+    "altura": 163.0,
+    "sexo": "m",
+    "nivel": "leve",
+    "objetivo": "hipertrofia",
+    "imc": 22.58,
+    "tmb": 1513.75,
+    "gasto_total": 2081.40625,
+    "plano": {
+      "calorias": 2289.546875,
+      "proteina": 120.0,
+      "gordura": 48.0,
+      "carboidrato": 344.38671875
+    },
+    "treino": "\nTreino ABC focado em sobrecarga progressiva:\nA - Peito + Triceps (6-12 reps)\nB - Costas + Biceps (6-12 reps)\nC - Pernas (agachamento, levantamento terra)\nFoco: Progressão de carga + superávit calórico.\n",
+    "data_hora": "2026-08-16 14:55:09"
+  }
+]
