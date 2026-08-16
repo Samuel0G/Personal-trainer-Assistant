@@ -3,3 +3,7 @@ __pycache__/
 *.spec
 .env
 venv/
+
+# Dados gerados localmente pelo app (não devem ir para o repositório)
+personal_trainer.db
+historico_usuarios.json
